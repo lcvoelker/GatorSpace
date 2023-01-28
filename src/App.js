@@ -1,7 +1,9 @@
 import './App.css';
 // components
 import PostRow from './components/postRow';
-import Sidebar from './components/sidebar'
+import Sidebar from './components/sidebar';
+import * as React from "react";
+import { render } from "react-dom";
 
 function App() {
     const rows = [
