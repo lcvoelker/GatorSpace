@@ -1,0 +1,9 @@
+.post-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: visible;
+}
+.header {
+    font-family: Paytone One;
+}

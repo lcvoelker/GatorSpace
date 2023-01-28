@@ -1,0 +1,13 @@
+.sidebar {
+    width: 20%;
+    height: auto;
+    background: grey;
+}
+.sidebar-header {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 1.8em;
+    
+    margin-top: 2vh;
+    text-align: center;
+}

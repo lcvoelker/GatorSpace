@@ -1,0 +1,10 @@
+p {
+    font-family: Inter;
+}
+.App {
+    display: flex;
+    flex-direction: row;
+}
+.mainView {
+    width: 80%;
+}

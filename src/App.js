@@ -1,30 +1,27 @@
-import React, { useEffect, useState } from 'react'
+import './App.css';
+// components
+import PostRow from './components/postRow';
+import Sidebar from './components/sidebar'
 
 function App() {
-
-  const [backendData, setBackendData] = useState([{ }])
-
-  useEffect(() => {
-    fetch("/api").then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackendData(data)
-      }
-    )
-  }, [])
-
+    const rows = [
+        { name: "Today" },
+        { name: "This week" },
+    ]
+    const posts = [
+        { title: "First post", desc: "this is the first post"},
+        { title: "2 post", desc: "second post"},
+        { title: "3 post", desc: "third post lol"},
+    ]
   return (
-    <div>
-      {(typeof backendData.users === 'undefined') ? (
-        <p>Loading!</p>
-      ): (
-        backendData.users.map((user, i) => (
-          <p key={i}>{user}</p>
-        ))
-      )}
+    <div className="App">
+        <div className="mainView">
+            <PostRow rowdata={rows[0]} postdata={posts} />
+            <PostRow rowdata={rows[1]} postdata={posts} />
+        </div>
+        <Sidebar />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
