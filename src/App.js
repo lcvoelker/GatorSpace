@@ -12,6 +12,7 @@ function App() {
         { title: "First post", desc: "this is the first post"},
         { title: "2 post", desc: "second post"},
         { title: "3 post", desc: "third post lol"},
+        { title: "4 post", desc: "loloolloloollolllol"},
     ]
   return (
     <div className="App">

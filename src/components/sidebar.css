@@ -1,7 +1,7 @@
 .sidebar {
     width: 20%;
     height: auto;
-    background: grey;
+    background: lightgrey;
 }
 .sidebar-header {
     font-family: Inter;
@@ -10,4 +10,18 @@
     
     margin-top: 2vh;
     text-align: center;
+}
+.button {
+    height: 5vh;
+    width: 10vw;
+
+    margin: auto;
+    padding: auto;
+    background: grey;
+    color: white;
+    text-align: center;
+    
+    font-family: Inter;
+    font-weight: 800;
+
 }

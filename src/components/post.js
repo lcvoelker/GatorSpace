@@ -2,11 +2,11 @@ import React from "react";
 import "./post.css";
 
 const Post = (props) => {
-    const { postdata = {} } = props;
+    const { item = {} } = props;
     return (
         <div className="post">
-            <p className="title">{postdata.title}</p>
-            <p className="desc">{postdata.desc}</p>
+            <p className="title">{item.title}</p>
+            <p className="desc">{item.desc}</p>
         </div>
     )
 }
